@@ -31,7 +31,6 @@ public class BucketSort {
 		for(int k: myArray) {
 		System.out.println(k);
 		}
-
 	}
 
 
@@ -47,12 +46,10 @@ public class BucketSort {
 		}
 
 		for(int k = 0; k < this.myArray.length; k++) {
-
 			this.bucket[hashFunction(this.myArray[k])].add(this.myArray[k]);
 		}
 
 		for(List myBucket: bucket) {
-
 			Collections.sort(myBucket);
 		}
 
@@ -61,7 +58,6 @@ public class BucketSort {
 		for(int z = 0; z < bucket.length ; z++) {
 
 			for(int value : bucket[z]) {
-				System.out.print("z: " + z + " value: " + value + " ");
 				myArray[j++] = value;
 			}
 			
